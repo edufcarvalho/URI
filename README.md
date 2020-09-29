@@ -10,4 +10,4 @@ All of them are written in **C**, but some can have a alternative, generally mor
 You can see my URI profile clicking [here](https://www.urionlinejudge.com.br/judge/pt/profile/432569)<br/>
 <br/>I will not accept any pull request, but you can send an issue, and I will help you with anything<br/>
 
-<sup>URI is developed under MIT license by the University of Rhode Island Computer Science Department</sup>
+<sup>URI is developed by the University of Rhode Island Computer Science Department</sup>
