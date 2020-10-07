@@ -7,7 +7,7 @@ int main(void) {
     char matring[4][84];
 
     for (i = 0; i < 4; i++) fgets(matring[i], 83, stdin);
-    size = strlen(matring[0]) - 2;
+    int size = strlen(matring[0]) - 2;
 
     char key1[] = {matring[0][0], matring[1][0], matring[2][0], matring[3][0], '\0'},
     key2[] = {matring[0][s], matring[1][s], matring[2][s], matring[3][s], '\0'};
