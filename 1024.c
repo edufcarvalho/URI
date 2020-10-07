@@ -1,17 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-char *strrev(char *str) {
-    int p1, p2;
-    char tmp;
+void strrev(char str[], int len) {
+    int i, j;
     
-    for (p1 = 0, p2 = strlen(str) - 1; p2 > p1; p1++, p2--) {
-        tmp = str[p1];
-        str[p1] = str[p2];
-        str[p2] = tmp;
+    for (i = 0, j = len; j > i; i++, j--) {
+        char tmp = str[i];
+        str[i] = str[j];
+        str[j] = tmp;
     }
-
-    return str;
 }
 
 int main(void) {
@@ -23,20 +20,17 @@ int main(void) {
     while (s--) {
         gets(cript);
 
-        int i;
-        for (i = 0; i < strlen(cript); i++)
+        int i, len = strlen(cript);
+
+        for (i = 0; i < len; i++)
             if (cript[i] >= 65 && cript[i] <= 90 || cript[i] >= 97 && cript[i] <= 122)
                 cript[i] += 3;
 
-        char *rev = cript;
-        rev = strrev(rev);
+        strrev(cript, len - 1);
         
-        int size = strlen(rev);
-        
-        for (i = size/2; i < size; i++)
-            rev[i] -= 1;
+        for (i = len/2; i < len; i++) cript[i] -= 1;
 
-        printf("%s\n", rev);
+        printf("%s\n", cript);
     }
     return 0;
 }

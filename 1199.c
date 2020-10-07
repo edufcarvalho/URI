@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main(void) {
     int a, num;
@@ -24,7 +23,7 @@ int main(void) {
             result[i] = '\0';
         
             printf("0x");
-            for (i = strlen(result) - 1; i >= 0; i--) printf("%c", result[i]);
+            for (i -= 1; i >= 0; i--) printf("%c", result[i]);
             printf("\n");
         }
     }
