@@ -3,7 +3,7 @@
 int main(void) {
     int a, b;
 
-    while (scanf("%d%d", &a, &b), a != 0 && b != 0) {
+    while (scanf("%d%d", &a, &b), a && b) {
         if (a > 0) {
             if (b > 0) printf("primeiro\n");
             else printf("quarto\n");

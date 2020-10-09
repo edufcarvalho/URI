@@ -3,7 +3,7 @@
 int main(void) {
     int a, i;
 
-    while(scanf("%d", &a), a != 0) {
+    while(scanf("%d", &a), a) {
         for (i = 1; i < a; i++)
             printf("%d ", i);
 

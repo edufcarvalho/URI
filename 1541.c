@@ -4,7 +4,7 @@
 int main(void) {
     int a, b, c;
 
-    while (scanf("%d", &a), a != 0) {
+    while (scanf("%d", &a), a) {
         scanf("%d%d", &b, &c);
         printf("%.0lf\n", floor(sqrt(a*b*100/c)));
     }

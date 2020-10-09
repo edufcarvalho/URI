@@ -2,7 +2,7 @@
 
 int main(void) {
     int i, j, n, a;
-    while (scanf("%d",&n), n > 0) {
+    while (scanf("%d",&n), n) {
         for (i = 1; i <= n; i++) {
             for (j = 1; j <= n ; j++) {
                 if (i >= j) a = i - j + 1;

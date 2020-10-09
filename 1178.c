@@ -5,10 +5,8 @@ int main(void) {
     double a;
     scanf("%lf", &a);
 
-    for (i = 0; i < 100; i++) {
+    for (i = 0; i < 100; i++, a /= 2)
         printf("N[%d] = %.4lf\n", i, a);
-        a /= 2;
-    }
 
     return 0;
 }

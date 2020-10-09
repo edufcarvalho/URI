@@ -11,13 +11,14 @@ int len (unsigned long long value) {
 }
 
 int main(void) {
-    int a, n, i, j, s, k = 4;
+    int a, n, k = 4;
     scanf("%d", &n);
 
     while (n--) {
         scanf("%d", &a);
         unsigned long long int matrix[a][a];
-        int max[a + 1];
+        int i, j, s, max[a + 1], spaces;
+
         for (i = 0; i < a; max[i++] = 0);
 
         for (i = 0; i < a; i++) {
@@ -32,7 +33,6 @@ int main(void) {
         if (k == 4) printf("Quadrado da matriz #%d:\n", k++);
         else printf("\nQuadrado da matriz #%d:\n", k++);
 
-        int spaces;
         for (i = 0; i < a; i++) {
             for (j = 0; j < a; j++) {
                 spaces = max[j] - len(matrix[i][j]);

@@ -5,7 +5,7 @@ int main(void) {
     int i, j, a, b;
     char str[11];
 
-    while (scanf("%d%d", &a, &b), a != 0 && b != 0) {
+    while (scanf("%d%d", &a, &b), a && b) {
         int counter[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     
         for (i = a; i <= b; i++) {
