@@ -6,25 +6,23 @@ using namespace std;
 
 int main(void) {
     int s;
-    char cript[1001];
     scanf("%d", &s);
     
-    cin.getline(cript, 0);
+    getchar();
     while (s--) {
-        cin.getline(cript, 1001);
+        string cript;
+        getline(cin, cript);
         
         for (char &v:cript)
             if (v >= 65 && v <= 90 || v >= 97 && v <= 122)
                 v += 3;
 
-        string rev = cript;
-        reverse(rev.begin(), rev.end());
+        reverse(cript.begin(), cript.end());
         
-        int i, size = rev.size();
-        for (i = size/2; i < size; i++)
-            rev[i] -= 1;
+        int i, size = cript.size();
+        for (i = size/2; i < size; i++) cript[i] -= 1;
 
-        cout << rev << "\n"; 
+        cout << cript << "\n"; 
     }
     return 0;
 }
