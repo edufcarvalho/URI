@@ -6,9 +6,9 @@ using namespace std;
 
 int main(void) {
     int s;
-    scanf("%d", &s);
-    
-    getchar();
+    ios::sync_with_stdio(false);
+    cin >> s;
+    cin.ignore(1);
     while (s--) {
         string cript;
         getline(cin, cript);

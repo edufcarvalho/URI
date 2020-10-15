@@ -5,6 +5,7 @@ using namespace std;
 
 int main (void) {
     char d;
+    ios::sync_with_stdio(false);
     string s;
     int size, i, j;
 

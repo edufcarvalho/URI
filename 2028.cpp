@@ -6,7 +6,7 @@ using namespace std;
 int main(void) {
     int n, c = 1;
 
-    while (cin >> n) {
+    while (scanf("%d", &n) != EOF) {
         int i, j, s = 1;
         vector <int> array;
         array.push_back(0);
