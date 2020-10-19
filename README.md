@@ -4,9 +4,8 @@
 
 ___
 
-This repository stores my **URI Online Judge** accepted solutions during the college classes.<br/>
+This repository stores my **URI Online Judge** C/C++ accepted solutions during the college classes.<br/>
 <br/>
-All of them are written in **C**, but some can have a alternative, generally more simple, version in **C++**.
 You can see my URI profile clicking [here](https://www.urionlinejudge.com.br/judge/pt/profile/432569)<br/>
 <br/>I will not accept any pull request, but you can send an issue, and I will help you with anything<br/>
 
