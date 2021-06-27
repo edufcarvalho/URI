@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    int i, temp;
+    int i;
     scanf("%d", &i);
 
     printf("%d ano(s)\n", i/365);
